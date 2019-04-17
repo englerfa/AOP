@@ -29,7 +29,7 @@ public aspect Parsed {
             Object argument = argumentValues[i];
             String name = argumentNames[i];	
             if (argument != null){
-            	Argument arg = new Argument(argument.toString(), name, argument.getClass().toString());
+            	Argument arg = new Argument(name, argument.toString(), argument.getClass().toString());
             	args.add(arg);
             }
         }
